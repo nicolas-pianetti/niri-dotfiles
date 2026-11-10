@@ -1,0 +1,9 @@
+[flavor]
+dark = "kanagawa"
+
+[tabs]
+sep_inner = { open = "", close = "" } 
+sep_outer = { open = "", close = "" }
+
+[indicator]
+padding = { open = "", close = "" } 
