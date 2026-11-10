@@ -1,0 +1,285 @@
+[accessibility]
+ui_scale = 0.80000000447034836
+
+[backdrop]
+enabled = true
+
+[bar]
+order = [ "default" ]
+
+    [bar.default]
+    border = "surface"
+    center = [ "workspaces" ]
+    end = [ "notifications", "volume", "brightness", "group:g1" ]
+    font_family = "CMU Serif"
+    margin_edge = 4
+    margin_ends = 4
+    radius = 4
+    radius_top_left = 3
+    scale = 0.95000000670552254
+    start = [ "session", "clock", "media" ]
+    thickness = 20
+    widget_spacing = 10
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "tray" ]
+        opacity = 1.0
+        padding = 6.0
+
+[brightness]
+enable_ddcutil = true
+
+[control_center]
+hidden_tabs = [ "monitor", "power", "network", "bluetooth", "weather", "calendar" ]
+sidebar_section = "full"
+width = 600
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "audio"
+
+[desktop_widgets]
+schema_version = 2
+widget_order = []
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget]
+
+[dock]
+icon_size = 32
+magnification_scale = 1.3500000052154064
+
+[location]
+address = "Santa Fe, Argentina"
+
+[lockscreen]
+fingerprint = false
+transition = [ "diamond", "disc", "fade", "golden", "melt", "vortex", "wipe", "zoom" ]
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-2", "lockscreen-login-box@VGA-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 683.0
+    cy = 586.0
+    output = "HDMI-A-2"
+    placement_height = 768.0
+    placement_width = 1366.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@VGA-1"]
+    box_height = 196.0
+    box_width = 608.0
+    cx = 320.0
+    cy = 298.0
+    output = "VGA-1"
+    placement_height = 480.0
+    placement_width = 640.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@VGA-1".settings]
+        background_color = "surface_container"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_password_reveal = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+[notification]
+background_opacity = 0.89999997988343239
+scale = 0.70000000298023224
+
+[shell]
+avatar_path = "/home/nico/Imágenes/Wallpapers/larhfk61opj21_1.webp"
+corner_radius_scale = 0.5000000074505806
+font_family = "Victor Mono"
+show_close_buttons = false
+
+    [shell.animation]
+    speed = 1.3000000193715096
+
+    [shell.launcher]
+    category_icons_only = true
+    compact = true
+    default_view = "all"
+    layout = "simple"
+    pinned = [ "helium", "spotify-launcher", "discord", "steam", "obsidian" ]
+    width = 560
+
+    [shell.panel]
+    control_center_placement = "floating"
+    launcher_position = "auto"
+    open_near_click_control_center = true
+
+    [shell.screenshot]
+    region_border_width = 2.5
+
+    [shell.shadow]
+    alpha = 0.34999999217689037
+
+[theme]
+builtin = "Catppuccin"
+community_palette = "Rose Pine Alt"
+custom_palette = "Cafecito"
+mode = "light"
+source = "community"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "foot", "gtk3", "gtk4", "niri" ]
+
+        [theme.templates.user.fastfetch_micro]
+        input_path = "$XDG_CONFIG_HOME/noctalia/templates/fastfetch/micro.jsonc"
+        output_path = "$XDG_CONFIG_HOME/fastfetch/micro.jsonc"
+
+        [theme.templates.user.fastfetch_small]
+        input_path = "$XDG_CONFIG_HOME/noctalia/templates/fastfetch/small.jsonc"
+        output_path = "$XDG_CONFIG_HOME/fastfetch/small.jsonc"
+
+        [theme.templates.user.fastfetch_tiny]
+        input_path = "$XDG_CONFIG_HOME/noctalia/templates/fastfetch/tiny.jsonc"
+        output_path = "$XDG_CONFIG_HOME/fastfetch/tiny.jsonc"
+
+        [theme.templates.user.labwc]
+        input_path = "~/.config/labwc/template/labwc.conf"
+        output_path = "~/.config/labwc/noctalia.conf"
+        post_hook = "bash ~/.config/labwc/template/apply.sh"
+        undo_hook = "bash ~/.config/labwc/template/undo.sh"
+
+        [theme.templates.user.noctalia-colloid]
+        input_path = "~/.config/noctalia/templates/Noctalia-Colloid.sh"
+        output_path = "~/.cache/noctalia/Noctalia-Colloid-apply.sh"
+        post_hook = "bash ~/.cache/noctalia/Noctalia-Colloid-apply.sh"
+
+        [theme.templates.user.noctalia-flat]
+        input_path = "~/.config/noctalia/templates/Noctalia-Flat.sh"
+        output_path = "~/.cache/noctalia/Noctalia-Flat-apply.sh"
+        post_hook = "bash ~/.cache/noctalia/Noctalia-Flat-apply.sh"
+
+        [theme.templates.user.noctalia-papirus]
+        input_path = "~/.config/noctalia/templates/Noctalia-Papirus.sh"
+        output_path = "~/.cache/noctalia/Noctalia-Papirus-apply.sh"
+        post_hook = "bash ~/.cache/noctalia/Noctalia-Papirus-apply.sh"
+
+        [theme.templates.user.noctalia-reversal]
+        input_path = "~/.config/noctalia/templates/Noctalia-Reversal.sh"
+        output_path = "~/.cache/noctalia/Noctalia-Reversal-apply.sh"
+        post_hook = "bash ~/.cache/noctalia/Noctalia-Reversal-apply.sh"
+
+        [theme.templates.user.noctalia-tela]
+        input_path = "~/.config/noctalia/templates/Noctalia-Tela.sh"
+        output_path = "~/.cache/noctalia/Noctalia-Tela-apply.sh"
+        post_hook = "bash ~/.cache/noctalia/Noctalia-Tela-apply.sh"
+
+        [theme.templates.user.noctalia-zafiro]
+        input_path = "~/.config/noctalia/templates/Noctalia-Zafiro.sh"
+        output_path = "~/.cache/noctalia/Noctalia-Zafiro-apply.sh"
+        post_hook = "bash ~/.cache/noctalia/Noctalia-Zafiro-apply.sh"
+
+        [theme.templates.user.qutebrowser]
+        input_path = "~/.config/qutebrowser/noctalia/template.py"
+        output_path = "~/.config/qutebrowser/noctalia/colors.py"
+        post_hook = "sh ~/.config/qutebrowser/noctalia/reload.sh"
+
+        [theme.templates.user.qutebrowser-startpage]
+        input_path = "~/.config/qutebrowser/startpage/template.css"
+        output_path = "~/.config/qutebrowser/startpage/colors.css"
+        post_hook = ""
+
+        [theme.templates.user.starship]
+        input_path = "$XDG_CONFIG_HOME/noctalia/templates/starship/6.toml"
+        output_path = "$XDG_CONFIG_HOME/starship.toml"
+
+[wallpaper]
+directory = "/home/nico/Imágenes/Wallpapers"
+transition = [ "diamond", "disc", "fade", "golden", "honeycomb", "melt", "vortex", "wipe", "zoom" ]
+transition_duration = 1900
+transition_on_startup = true
+
+    [wallpaper.automation]
+    recursive = true
+
+    [wallpaper.default]
+    path = "/home/nico/Imágenes/Wallpapers/bg.jpg"
+
+    [wallpaper.last]
+    path = "/home/nico/Imágenes/Wallpapers/bg.jpg"
+
+    [wallpaper.monitors.HDMI-A-2]
+    path = "/home/nico/Imágenes/Wallpapers/bg.jpg"
+
+    [wallpaper.monitors.VGA-1]
+    path = "/home/nico/Imágenes/Wallpapers/china.jpeg"
+
+[widget.battery]
+enabled = false
+
+[widget.bluetooth]
+enabled = false
+
+[widget.control-center]
+enabled = false
+
+[widget.media]
+min_length = 88
+rotate_album_art = true
+
+[widget.network]
+enabled = false
+
+[widget.session]
+capsule = true
+
+[widget.workspaces]
+style = "minimal"
